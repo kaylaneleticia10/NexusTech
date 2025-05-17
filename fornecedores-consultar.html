@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Fornecedores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/fornecedores-consultar.css">
+</head>
+<body>
+  <nav class="nav-lateral">
+    <ul>
+      <li>Dashboard</li>
+      <li>Produtos</li>
+      <li>Estoque</li>
+      <li>Vendas</li>
+      <li class="ativo">Fornecedores</li>
+    </ul>
+  </nav>
+
+  <main class="conteudo">
+    <div class="top-buttons">
+      <button class="btn">Cadastrar</button>
+      <button class="btn-outline">Consultar</button>
+    </div>
+
+ <div class="buscar-container">
+    <input type="text" placeholder="Buscar fornecedor...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+  <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CNPJ/CPF</th>
+          <th>Telefone</th>
+          <th>Celular</th>
+          <th>Email</th>
+          <th>Endereço</th>
+          <th>Produtos Fornecidos</th>
+          <th>Editar</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Exemplo 1</td>
+          <td>123.456.789-00</td>
+          <td>(12) 3456-7890</td>
+          <td>(12) 99999-0000</td>
+          <td>exemplo@fornecedor.com</td>
+          <td>Rua A, 123</td>
+          <td>Produtos A</td>
+          <td class="acoes"><i class="fas fa-pen"></i></td>
+          <td class="acoes"><i class="fas fa-trash"></i></td>
+        </tr>
+        <!-- Repita para mais linhas -->
+      </tbody>
+    </table>
+
+    
+  </main>
+</body>
+</html>

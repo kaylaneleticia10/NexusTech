@@ -63,3 +63,21 @@ body {
 .btn:hover {
   background: #3d6cc2;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 2rem;
+  }
+  .logo {
+    width: 80px;
+  }
+  .input-area input {
+    padding: 12px 10px 12px 35px;
+    font-size: 0.95rem;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
