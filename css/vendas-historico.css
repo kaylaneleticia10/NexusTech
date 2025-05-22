@@ -10,6 +10,7 @@ body {
   display: flex;
 }
 
+/* Menu lateral */
 .nav-lateral {
   width: 200px;
   background-color: #ffffff;
@@ -28,7 +29,7 @@ body {
   color: #333;
   cursor: pointer;
   position: relative;
-  transition: color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .nav-lateral li:hover {
@@ -51,17 +52,13 @@ body {
   border-radius: 2px;
 }
 
-main {
+/* Conteúdo principal */
+.conteudo {
   flex: 1;
   padding: 2rem;
 }
 
-h1 {
-  color: #777;
-  margin-bottom: 1rem;
-}
-
-p {
-  color: #333;
-  line-height: 1.5;
+/* Botões no topo */
+.top-buttons {
+  margin-bottom: 2rem;
 }

@@ -1,8 +1,9 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,10 +13,12 @@ body {
   align-items: center;
   height: 100vh;
 }
-.logo-container img{
-  width: 150px; 
+
+.logo-container img {
+  width: 150px;
   height: auto;
 }
+
 .container {
   background: #ffffff;
   padding: 3rem;
@@ -23,20 +26,24 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 400px;
   max-width: 90%;
-  overflow: hidden; 
+  overflow: hidden;
 }
+
 .logo-container {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .logo {
-  width: 100px; 
+  width: 100px;
   height: auto;
 }
+
 .input-area {
   position: relative;
   margin-bottom: 1.2rem;
 }
+
 .input-area i {
   position: absolute;
   left: 10px;
@@ -44,12 +51,14 @@ body {
   transform: translateY(-50%);
   color: #777;
 }
+
 .input-area input {
-  width: 100%; 
+  width: 100%;
   padding: 12px 10px 12px 35px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .btn {
   width: 100%;
   padding: 12px;
@@ -60,6 +69,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .btn:hover {
   background: #3d6cc2;
 }
