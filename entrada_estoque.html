@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrada de Estoque</title>
+  <link rel="stylesheet" href="css/entrada_estoque.css">
+</head>
+
+<body>
+  <!-- Menu Lateral -->
+  <nav class="nav-lateral">
+    <ul>
+      <li>Dashboard</li>
+      <li>Produtos</li>
+      <li class="ativo">Estoque</li>
+      <li>Vendas</li>
+      <li>Fornecedores</li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="tabs">
+      <button class="tab ativo">Estoque</button>
+      <button class="tab selecionado">Entrada</button>
+      <button class="tab">Histórico</button>
+    </div>
+
+    <form class="formulario">
+      <div class="linha">
+        <input type="text" placeholder="Produto" class="input-text">
+        <select class="input-select">
+          <option>Fornecedor</option>
+        </select>
+        <input type="number" placeholder="Qtd adicionada" class="input-text">
+        <input type="date" class="input-data">
+      </div>
+
+      <div class="linha">
+        <input type="text" placeholder="Custo da compra" class="input-text">
+        <select class="input-select">
+          <option>Unidade/total</option>
+        </select>
+        <input type="text" placeholder="Número do lote" class="input-text">
+        <input type="date" class="input-data">
+      </div>
+
+      <div class="linha">
+        <textarea placeholder="Observações" class="textarea"></textarea>
+      </div>
+
+      <div class="linha">
+        <button type="submit" class="botao-salvar">Salvar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
