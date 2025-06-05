@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Estoque</title>
+  <link rel="stylesheet" href="/css/estoque.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="nav-lateral">
+      <nav>
+        <ul>
+          <li>Dashboard</li>
+          <li>Produtos</li>
+          <li class="ativo">Estoque</li>
+          <li>Vendas</li>
+          <li>Fornecedores</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+<!--      <div class="top-bar">-->
+<!--        <div class="tabs">-->
+<!--          <button class="active">Estoque</button>-->
+<!--          <button>Entrada</button>-->
+<!--          <button>Histórico</button>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="main-content">
+        <div class="filters">
+          <span class="filter estoque">Estoque baixo</span>
+          <span class="filter vencimento">Próx. Vencimento</span>
+          <span class="filter menos">Menos vendidos</span>
+          <span class="filter mais">Mais vendidos</span>
+          <span class="filter categoria">Categoria</span>
+        </div>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Nome/Código">
+          </label>
+          <button>🔍</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Cod. de barras</th>
+              <th>Cod. Interno</th>
+              <th>Categoria</th>
+              <th>Quantidade atual</th>
+              <th>Validade</th>
+              <th>Lote</th>
+              <th>Status</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Linha exemplo com 9 colunas reais -->
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="edit">✎</td>
+            </tr>
+
+            <!-- Copie abaixo para mais linhas -->
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="edit">✎</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="edit">✎</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="edit">✎</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="edit">✎</td>
+            </tr>
+            <!-- Você pode repetir esse bloco quantas vezes quiser -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
