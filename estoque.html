@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Estoque</title>
-  <link rel="stylesheet" href="/css/estoque.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/estoque.css">
 </head>
 <body>
   <div class="layout">
     <aside class="nav-lateral">
       <nav>
         <ul>
-          <li>Dashboard</li>
-          <li>Produtos</li>
-          <li class="ativo">Estoque</li>
-          <li>Vendas</li>
-          <li>Fornecedores</li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="produtos-cadastrar.html">Produtos</a></li>
+          <li class="ativo"><a href="entrada_estoque.html">Estoque</a></li>
+          <li><a href="vendas.html">Vendas</a></li>
+          <li><a href="fornecedores-cadastrar.html">Fornecedores</a></li>
         </ul>
       </nav>
     </aside>
@@ -37,10 +38,10 @@
           <span class="filter categoria">Categoria</span>
         </div>
         <div class="search">
-          <label>
-            <input type="text" placeholder="Nome/Código">
-          </label>
-          <button>🔍</button>
+          <div class="buscar-container">
+            <input type="text" placeholder="Buscar fornecedor..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
         </div>
       </div>
 

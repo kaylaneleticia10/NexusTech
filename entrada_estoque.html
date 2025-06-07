@@ -12,19 +12,18 @@
   <!-- Menu Lateral -->
   <nav class="nav-lateral">
     <ul>
-      <li>Dashboard</li>
-      <li>Produtos</li>
-      <li class="ativo">Estoque</li>
-      <li>Vendas</li>
-      <li>Fornecedores</li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="produtos-cadastrar.html">Produtos</a></li>
+      <li class="ativo"><a href="entrada_estoque.html">Estoque</a></li>
+      <li><a href="vendas.html">Vendas</a></li>
+      <li><a href="fornecedores-cadastrar.html">Fornecedores</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    <div class="tabs">
-      <button class="tab ativo">Estoque</button>
-      <button class="tab selecionado">Entrada</button>
-      <button class="tab">Histórico</button>
+     <div class="top-buttons">
+      <a class="button btn" href="entrada_estoque.html">Cadastrar</a>
+      <a class="button btn-outline" href="estoque.html">Consultar</a>
     </div>
 
     <form class="formulario">
@@ -51,7 +50,7 @@
       </div>
 
       <div class="linha">
-        <button type="submit" class="botao-salvar">Salvar</button>
+        <button type="submit" class="btn">Salvar</button>
       </div>
     </form>
   </main>

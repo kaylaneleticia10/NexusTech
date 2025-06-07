@@ -52,6 +52,10 @@ body {
   border-radius: 2px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Conteúdo principal */
 .conteudo {
   flex: 1;
@@ -63,7 +67,7 @@ body {
   margin-bottom: 2rem;
 }
 
-button {
+.button, buttton {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.9rem;

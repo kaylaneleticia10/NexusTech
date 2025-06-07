@@ -65,3 +65,9 @@
       color: #333;
       line-height: 1.5;
     }
+
+    a {
+      text-decoration: none; /* Remove o sublinhado */
+      color: inherit;         /* Herda a cor do texto do elemento pai */
+    } 
+    

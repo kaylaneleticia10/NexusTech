@@ -50,6 +50,11 @@ body {
     border-radius: 2px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .main {
     flex-grow: 1;
     padding: 30px;
@@ -75,15 +80,26 @@ body {
     color: white;
 }
 
-.search {
-    display: flex;
+.buscar-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+.buscar-container input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      flex: 1;
+      max-width: 300px;
 }
-
-.search input {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 6px 0 0 6px;
-    width: 200px;
+.buscar-container button {
+    background-color: #2fa03e;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .main-content {
@@ -93,15 +109,6 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-}
-
-.search button {
-    background-color: #2fa03e;
-    border: none;
-    color: white;
-    padding: 6px 10px;
-    border-radius: 0 6px 6px 0;
-    cursor: pointer;
 }
 
 .filters {
@@ -146,18 +153,23 @@ body {
 
 table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    text-align: center;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #ccc;
+    text-align: center;
     padding: 12px;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
 }
 
 thead th {
-    background-color: #f9f9f9;
+   background-color: #f9f9f9;
+   color: #555;
 }
 
 .edit {

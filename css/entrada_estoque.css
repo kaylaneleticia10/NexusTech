@@ -52,36 +52,21 @@ body {
   border-radius: 2px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Conteúdo principal */
 .container {
   flex-grow: 1;
   padding: 2rem;
 }
 
-.tabs {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.tab {
-  background-color: #E6E6FA;
-  border: none;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.tab.selecionado {
-  background-color: #2fa03e;
-  color: white;
-}
-
 .formulario {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 20px;
 }
 
 .linha {
@@ -94,11 +79,11 @@ body {
 .input-select,
 .input-data,
 .textarea {
-  padding: 0.7rem;
+   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   flex: 1;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .textarea {
@@ -107,22 +92,7 @@ body {
   resize: none;
 }
 
-.botao-salvar {
-  background-color: #2fa03e;
-  color: white;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.botao-salvar:hover {
-  background-color: #37bb48;
-}
-
-/* Botões gerais */
-button {
+.button, button {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -130,6 +100,7 @@ button {
   margin-right: 0.5rem;
 }
 
+/* Botão principal */
 .btn {
   background-color: #2fa03e;
   color: #ffffff;
@@ -147,7 +118,7 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: #e9f5e9;
+  background-color: #e9f0ff;
 }
 
 /* Responsividade */
