@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 
+<!-- Modal de erro -->
+<div id="modalErro" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <p>Usuário ou senha incorretos!</p>
+    </div>
+</div>
+
 <body>
 
     <div class="container">
@@ -16,21 +24,23 @@
             <img src="img/logo.jpeg" alt="Logo NexusTech" class="logo">
         </div>
 
-        <form class="login-form">
+        <form class="login-form" onsubmit="return login()">
             <div class="input-area">
                 <i class="fa fa-user"></i>
-                <input type="text" placeholder="Usuário" class="usuario" required>
+                <input type="text" id="usuario" placeholder="Usuário" required>
             </div>
 
             <div class="input-area">
                 <i class="fa fa-lock"></i>
-                <input type="password" placeholder="Senha" class="senha" required>
+                <input type="password" id="senha" placeholder="Senha" required>
             </div>
 
-            <button type="submit" class="btn">Entrar</button>
+        <button type="submit" class="btn">Entrar</button>
         </form>
+
     </div>
 
+    <script src="js/login.js"></script>
 </body>
 
 </html>
