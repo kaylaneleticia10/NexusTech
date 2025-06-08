@@ -1,18 +1,15 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
   display: flex;
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
 }
 
-/* Navegação lateral */
 .nav-lateral {
   width: 200px;
   background-color: #fff;
@@ -31,7 +28,7 @@ body {
   color: #333;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s;
+  transition: color 0.2s;
 }
 
 .nav-lateral li:hover {
@@ -54,27 +51,28 @@ body {
   border-radius: 2px;
 }
 
-/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Conteúdo principal */
 .conteudo {
   flex: 1;
   padding: 2rem;
 }
 
-/* Botões do topo */
 .top-buttons {
+  margin-bottom: 2rem;
+}
+
+/* Container flexível para os botões */
+.button-group {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-/* Estilo de botões */
 .button,
 button {
   padding: 8px 16px;
@@ -86,7 +84,7 @@ button {
 
 .btn {
   background-color: #2fa03e;
-  color: #fff;
+  color: #ffffff;
   border: none;
 }
 
@@ -95,8 +93,8 @@ button {
 }
 
 .btn-outline {
-  background: transparent;
   border: 1px solid #2fa03e;
+  background: transparent;
   color: #2fa03e;
 }
 
@@ -104,37 +102,58 @@ button {
   background-color: #e9f0ff;
 }
 
-/* Formulário */
-.form-produto fieldset {
-  border: none;
-  margin-bottom: 2rem;
-}
-
-.form-produto h3 {
-  color: #777;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Grupo de inputs */
-.grupo {
+.buscar-container {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.grupo input,
-.grupo select {
-  padding: 10px;
+.buscar-container input[type="text"] {
+  padding: 8px 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1 1 calc(33.33% - 1rem);
-  max-width: calc(33.33% - 1rem);
-  min-width: 150px;
+  border-radius: 6px;
+  flex: 1;
+  max-width: 300px;
 }
 
-/* Responsividade */
+.buscar-container button {
+  background-color: #2fa03e;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-container {
+  margin-top: 60px;
+  background-color: white;
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+thead th {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
@@ -162,24 +181,39 @@ button {
     white-space: nowrap;
   }
 
-  .conteudo {
-    padding: 1.5rem 1rem;
+  .main {
+    padding: 1rem;
   }
 
-  .top-buttons {
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 30px;
+  }
+
+  .search {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 
-  .grupo {
-    flex-direction: column;
-    gap: 0.5rem;
+  .search input {
+    width: 100%;
   }
 
-  .grupo input,
-  .grupo select,
-  .button,
-  button {
-    width: 100%;
-    max-width: 100%;
+  .table-container {
+    overflow-x: auto;
+    margin-top: 30px;
+  }
+
+  table {
+    min-width: 800px;
+  }
+
+  th,
+  td {
+    padding: 10px 6px;
+    font-size: 0.9rem;
   }
 }

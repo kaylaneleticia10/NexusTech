@@ -1,3 +1,4 @@
+/* RESET E CONFIGURAÇÃO BASE */
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +11,17 @@ body {
   display: flex;
 }
 
-/* Menu lateral */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MENU LATERAL */
 .nav-lateral {
   width: 200px;
-  background-color: #ffffff;
   height: 100vh;
   padding-top: 2rem;
+  background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,11 +58,7 @@ body {
   border-radius: 2px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-/* Conteúdo principal */
+/* CONTEÚDO PRINCIPAL */
 .container {
   flex-grow: 1;
   padding: 2rem;
@@ -71,15 +73,21 @@ a {
 
 .linha {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* CAMPOS DE FORMULÁRIO */
+label {
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .input-text,
 .input-select,
 .input-data,
 .textarea {
-   padding: 10px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   flex: 1;
@@ -92,18 +100,19 @@ a {
   resize: none;
 }
 
-.button, button {
+/* BOTÕES */
+.button,
+button {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  /* Remover: margin-right: 0.5rem; */
 }
-
 /* Botão principal */
 .btn {
   background-color: #2fa03e;
-  color: #ffffff;
+  color: #fff;
   border: none;
 }
 
@@ -111,6 +120,7 @@ a {
   background-color: #37bb48;
 }
 
+/* Botão com contorno */
 .btn-outline {
   border: 1px solid #2fa03e;
   background: transparent;
@@ -121,7 +131,7 @@ a {
   background-color: #e9f0ff;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -130,32 +140,31 @@ a {
   .nav-lateral {
     width: 100%;
     height: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    display: flex;
-    padding: 0.5rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
   }
 
   .nav-lateral ul {
     display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    width: max-content;
+    overflow-x: auto;
+    padding: 0.5rem;
   }
 
   .nav-lateral li {
-    flex: 0 0 auto;
-    padding: 10px 16px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
     white-space: nowrap;
-    border-right: 1px solid #eee;
   }
 
-  .nav-lateral li:last-child {
-    border-right: none;
+  .top-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
   }
-
   .container {
     width: 100%;
     padding: 1rem;

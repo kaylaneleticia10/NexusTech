@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Produtos</title>
+   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/produtos-consultar.css">
+</head>
+
+<body>
+  <nav class="nav-lateral">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li class="ativo"><a href="produtos-cadastrar.html">Produtos</a></li>
+      <li><a href="entrada_estoque.html">Estoque</a></li>
+      <li><a href="vendas.html">Vendas</a></li>
+      <li><a href="fornecedores-cadastrar.html">Fornecedores</a></li>
+    </ul>
+    </ul>
+  </nav>
+
+  <main class="conteudo">
+    <div class="top-buttons">
+      <a class="button btn" href="produtos-cadastrar.html">Cadastrar</a>
+      <a class="button btn-outline" href="produtos-consultar.html">Consultar</a>
+    </div>
+
+      <div class="search">
+          <div class="buscar-container">
+            <input type="text" placeholder="Buscar produto..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cod. de barras</th>
+          <th>Cod. Interno</th>
+          <th>Categoria</th>
+          <th>Fornecedor</th>
+          <th>Custo liquido (R$)</th>
+          <th>Custo bruto (R$)</th>
+          <th>Preço de venda (R$)</th>
+          <th>Unidade de venda</th>
+          <th>origem ICMS</th>
+          <th>NCM</th>
+          <th>Editar</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Exemplo de linha (preencha os dados conforme necessário) -->
+        <tr>
+          <td>Exemplo Produto</td>
+          <td>7891234567890</td>
+          <td>00123</td>
+          <td>Alimentos</td>
+          <td>Monteiro Ltda.</td>
+          <td>10,00</td>
+          <td>12,00</td>
+          <td>15,00</td>
+          <td>Unidade</td>
+          <td>Origem nacional</td>
+          <td>123</td>
+          <td class="acoes"><i class="fas fa-pen"></i></td>
+          <td class="acoes"><i class="fas fa-trash"></i></td>
+        </tr>
+        <!-- Copie a linha acima para mais produtos -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>

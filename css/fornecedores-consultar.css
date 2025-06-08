@@ -1,38 +1,47 @@
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
 }
+
+/* Navegação lateral */
 .nav-lateral {
   width: 200px;
-  background-color: #fff;
   height: 100vh;
+  background-color: #fff;
   padding-top: 2rem;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .nav-lateral ul {
   list-style: none;
   padding-left: 0;
 }
+
 .nav-lateral li {
   padding: 12px 20px;
   color: #333;
   cursor: pointer;
   position: relative;
-  transition: color 0.2s;
+  transition: background-color 0.2s;
 }
+
 .nav-lateral li:hover {
   background-color: #f5f5f5;
 }
+
 .nav-lateral li.ativo {
   font-weight: bold;
   color: #2fa03e;
 }
+
 .nav-lateral li.ativo::after {
   content: "";
   position: absolute;
@@ -43,104 +52,141 @@ body {
   background-color: #2fa03e;
   border-radius: 2px;
 }
+
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Conteúdo principal */
 .conteudo {
   flex: 1;
   padding: 2rem;
 }
-.top-buttons {
-  margin-bottom: 2rem;
-}
-.button {
+
+/* Botões */
+.button,
+button {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  /* Remover: margin-right: 0.5rem; */
 }
+
 .btn {
   background-color: #2fa03e;
-  color: #ffffff;
+  color: #fff;
   border: none;
 }
+
 .btn:hover {
   background-color: #37bb48;
 }
+
 .btn-outline {
   border: 1px solid #2fa03e;
   background: transparent;
   color: #2fa03e;
 }
+
 .btn-outline:hover {
   background-color: #e9f0ff;
 }
+
+/* Botões no topo */
+.top-buttons {
+  margin-bottom: 2rem;
+}
+
+/* Campo de busca */
 .buscar-container {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .buscar-container input[type="text"] {
-      padding: 8px 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      flex: 1;
-      max-width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  max-width: 300px;
 }
+
 .buscar-container button {
-    background-color: #2fa03e;
-    color: #ffffff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    overflow: hidden;
+  background-color: #2fa03e;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
 }
-th, td {
+
+/* Tabela */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 800px;
+}
+
+th,
+td {
   text-align: center;
   padding: 12px;
   border: 1px solid #eee;
   font-size: 0.9rem;
 }
+
 th {
   background-color: #f9f9f9;
   color: #555;
 }
+
 td i {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .acoes i {
   margin: 0 5px;
 }
+
 .acoes i:hover {
   opacity: 0.8;
 }
+
+/* Responsividade */
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
   }
+
   .nav-lateral {
     width: 100%;
     height: auto;
     box-shadow: none;
     border-bottom: 1px solid #ccc;
+    padding: 0;
   }
+
   .nav-lateral ul {
     display: flex;
     overflow-x: auto;
     padding: 0.5rem;
   }
+
   .nav-lateral li {
     flex: 1;
     text-align: center;
@@ -148,9 +194,35 @@ td i {
     font-size: 0.9rem;
     white-space: nowrap;
   }
+
+  .conteudo {
+    padding: 1.5rem 1rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 30px;
+  }
+
   .top-buttons {
     display: flex;
-    flex-direction: column;
     gap: 10px;
+  }
+
+  .buscar-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buscar-container input[type="text"],
+  .buscar-container button {
+    width: 100%;
+    max-width: 100%;
   }
 }

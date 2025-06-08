@@ -62,18 +62,23 @@ a {
   flex: 1;
   padding: 2rem;
 }
-
+h2 {
+  color: #777;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
 /* Botões no topo */
 .top-buttons {
   margin-bottom: 2rem;
 }
 
-.button,button {
+.button,
+button {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.9rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  /* Remover: margin-right: 0.5rem; */
 }
 
 .btn {
@@ -138,6 +143,11 @@ td {
   border-right: 1px solid #ddd;
 }
 
+thead th {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
 th:last-child,
 td:last-child {
   border-right: none;
@@ -159,30 +169,25 @@ tr:hover {
   }
 
   .nav-lateral {
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    padding: 0.5rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        border-bottom: 1px solid #ccc;
+        padding: 0;
   }
 
   .nav-lateral ul {
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
+      display: flex;
+      overflow-x: auto;
+      padding: 0.5rem;
   }
 
   .nav-lateral li {
-    flex: 0 0 auto;
-    padding: 10px 16px;
-    white-space: nowrap;
-    border-right: 1px solid #eee;
-  }
-
-  .nav-lateral li:last-child {
-    border-right: none;
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      white-space: nowrap;
   }
 
   .conteudo {
